@@ -1,4 +1,12 @@
+import { useForm } from "react-hook-form";
+
+type authFormFields = {
+  email: string,
+  password: String,
+}
+
 const App = () => {
+  const formMethod = useForm();
   return (
     <div className="container my-5">
       <form>
@@ -16,4 +24,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
